@@ -1,0 +1,21 @@
+{
+  "name": "alexa-openwhisk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm run unit && npm run eslint",
+    "eslint": "eslint *.js test",
+    "unit": "istanbul cover _mocha test/unit -- -R spec"
+  },
+  "author": "",
+  "license": "ALv2",
+  "dependencies": {
+    "alexa-verifier": "0.3.6",
+    "@cloudant/cloudant": "^2.1.0",
+    "request": "^2.83.0",
+    "watson-developer-cloud": "2.32.1",
+    "ovh": "^2.0.1",
+    "@sendgrid/mail": "^6.2.1"
+  }
+}
